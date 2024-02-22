@@ -4,27 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui'],
+            serif: ['Zilla Slab', 'Georgia'],
+            mono: ['ui-monospace', 'SFMono-Regular']
+          }
+        }
+      }
+    </script>
     <title>Typography</title>
   </head>
   <body>
     <!-- Font Family -->
+    <div class="font-sans">Tailwind is ... ?!</div>
+    <div class="font-serif">Tailwind is ... ?!</div>
+    <div class="font-mono">Tailwind is ... ?!</div>
 
     <!-- Font Size -->
+    <div class="text-xs">Tailwind is ... ?!</div>
+    <div class="text-sm">Tailwind is ... ?!</div>
+    <div class="text-base">Tailwind is ... ?!</div>
+    <div class="text-ls">Tailwind is ... ?!</div>
+    <div class="text-xl">Tailwind is ... ?!</div>
+    <div class="text-2xl">Tailwind is ... ?!</div>
+    <div class="text-3xl">Tailwind is ... ?!</div>
 
     <!-- Font Weight -->
+    <div class="font-light">Tailwind is ... ?!</div>
+    <div class="font-normal">Tailwind is ... ?!</div>
+    <div class="font-medium">Tailwind is ... ?!</div>
+    <div class="font-semibold">Tailwind is ... ?!</div>
+    <div class="font-bold">Tailwind is ... ?!</div>
 
     <!-- Letter Spacing -->
+    <div class="tracking-tight">Tailwind is ... ?!</div>
+    <div class="tracking-normal">Tailwind is ... ?!</div>
+    <div class="tracking-wide">Tailwind is ... ?!</div>
 
     <!-- Text Alignment -->
+    <div class="text-left">Tailwind is ... ?!</div>
+    <div class="text-center">Tailwind is ... ?!</div>
+    <div class="text-right">Tailwind is ... ?!</div>
 
     <!-- Text Decoration -->
+    <div class="underline decoration-4 decoration-blue-400">Tailwind is ... ?!</div>
 
     <!-- Decoration Style -->
+    <div class="underline decoration-double">Tailwind is ... ?!</div>
+    <div class="underline decoration-dotted">Tailwind is ... ?!</div>
+    <div class="underline decoration-dashed">Tailwind is ... ?!</div>
+    <div class="underline decoration-wavy">Tailwind is ... ?!</div>
 
     <!-- Decoration Offset -->
+    <div class="underline decoration-4 decoration-blue-400 underline-offset-8">
+      Tailwind is ... ?!
+    </div>
 
     <!-- Text Transform -->
+    <p class="normal-case">Tailwind is ... ?!</p>
+    <p class="uppercase">Tailwind is ... ?!</p>
+    <p class="lowercase">Tailwind is ... ?!</p>
+    <p class="capitalized">Tailwind is ... ?!</p>
   </body>
 </html>
 
